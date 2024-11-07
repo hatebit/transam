@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Pro Racer</title><meta name="description" content="Will this ever be a racing game?"><meta name="author" content="Nelson"><style>html,
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Trans America</title><meta name="description" content="Will this ever be a racing game?"><meta name="author" content="Nelson"><style>html,
       body {
         overflow: hidden;
         width: 100%;
@@ -13,13 +13,16 @@
         touch-action: none;
       }
 
-      #fps {
+      .infoBox {
           position: absolute;
           background-color: black;
           border: 2px solid red;
           text-align: center;
           font-size: 16px;
           color: white;
+      }
+
+      #fps {
           top: 15px;
           right: 10px;
           width: 60px;
@@ -27,12 +30,6 @@
       }
 
       #pos {
-          position: absolute;
-          background-color: black;
-          border: 2px solid red;
-          text-align: center;
-          font-size: 16px;
-          color: white;
           top: 50px;
           right: 10px;
           width: 60px;
@@ -40,14 +37,15 @@
       }
 
       #speed {
-          position: absolute;
-          background-color: black;
-          border: 2px solid red;
-          text-align: center;
-          font-size: 16px;
-          color: white;
           top: 85px;
           right: 10px;
           width: 60px;
           height: 20px;
-      }</style><script defer="defer" src="js/babylonBundle.js"></script></head><body><div id="fps">0 fps</div><div id="pos">0,0</div><div id="speed">0</div><canvas id="renderCanvas" touch-action="none"></canvas></body></html>
+      }
+      
+      #district {
+          top: 15px;
+          right: 40%;
+          width: 300px;
+          height: 20px;
+      }</style><script defer="defer" src="js/babylonBundle.js"></script></head><body><div class="infoBox" id="fps">0 fps</div><div class="infoBox" id="pos">0,0</div><div class="infoBox" id="speed">0</div><div class="infoBox" id="district">No</div><canvas id="renderCanvas" touch-action="none"></canvas></body></html>
