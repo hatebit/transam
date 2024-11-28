@@ -48,4 +48,24 @@
           right: 40%;
           width: 300px;
           height: 20px;
-      }</style><script defer="defer" src="js/babylonBundle.js"></script></head><body><div class="infoBox" id="fps">0 fps</div><div class="infoBox" id="pos">0,0</div><div class="infoBox" id="speed">0</div><div class="infoBox" id="district">No</div><canvas id="renderCanvas" touch-action="none"></canvas></body></html>
+      }
+      
+      #map {
+          bottom: 15px;
+          left: 10px;
+          width: 320px;
+          height: 175px;
+      }
+      #mapMarker {
+          position: relative;
+          background-color: white;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          z-index: 10;
+      }
+      img {
+          position: absolute;
+          top: 0;
+          left: 0;
+      }</style><script defer="defer" src="js/babylonBundle.js"></script></head><body><div class="infoBox" id="fps">0 fps</div><div class="infoBox" id="pos">0,0</div><div class="infoBox" id="speed">0</div><div class="infoBox" id="district">No</div><div class="infoBox" id="map"><div class="infoBox" id="mapMarker"></div><img src="map.png" height="175" width="320"/></div><canvas id="renderCanvas" touch-action="none"></canvas></body></html>
