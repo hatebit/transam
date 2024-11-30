@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Trans America</title><meta name="description" content="Will this ever be a racing game?"><meta name="author" content="Nelson"><style>html,
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Trans America</title><meta name="description" content="Drive across the post apocalyptic United States."><meta name="author" content="Nelson"><style>html,
       body {
         overflow: hidden;
         width: 100%;
@@ -13,13 +13,16 @@
         touch-action: none;
       }
 
-      .infoBox {
+      .ui-element {
           position: absolute;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          text-align: center;
+          font-size: medium;
+          color: white;
+      }
+      .boxed {
           background-color: black;
           border: 2px solid red;
-          text-align: center;
-          font-size: 16px;
-          color: white;
       }
 
       #fps {
@@ -30,31 +33,35 @@
       }
 
       #pos {
-          top: 50px;
+          top: 45px;
           right: 10px;
           width: 60px;
           height: 20px;
       }
 
       #speed {
-          top: 85px;
-          right: 10px;
-          width: 60px;
+          bottom: 25px;
+          right: 25px;
+          width: 100px;
           height: 20px;
       }
       
       #district {
-          top: 15px;
-          right: 40%;
+          bottom: 60px;
+          right: 25px;
           width: 300px;
-          height: 20px;
+          height: 40px;
+          rotate: -15deg;
+          font-size: xx-large;
+          color: blue;
+          text-shadow: 0 0 10px red, 3px 3px 50px white;
       }
       
       #map {
           bottom: 15px;
           left: 10px;
-          width: 320px;
-          height: 175px;
+          width: 321px;
+          height: 176px;
       }
       #mapMarker {
           position: relative;
@@ -68,4 +75,4 @@
           position: absolute;
           top: 0;
           left: 0;
-      }</style><script defer="defer" src="js/babylonBundle.js"></script></head><body><div class="infoBox" id="fps">0 fps</div><div class="infoBox" id="pos">0,0</div><div class="infoBox" id="speed">0</div><div class="infoBox" id="district">No</div><div class="infoBox" id="map"><div class="infoBox" id="mapMarker"></div><img src="map.png" height="175" width="320"/></div><canvas id="renderCanvas" touch-action="none"></canvas></body></html>
+      }</style><script defer="defer" src="js/babylonBundle.js"></script></head><body><div class="ui-element boxed" id="fps">0 fps</div><div class="ui-element boxed" id="pos">0,0</div><div class="ui-element boxed" id="speed">0</div><div class="ui-element" id="district">No</div><div class="ui-element boxed" id="map"><div class="ui-element boxed" id="mapMarker"></div><img src="./map.png" height="175" width="320"/></div><canvas id="renderCanvas" touch-action="none"></canvas></body></html>
