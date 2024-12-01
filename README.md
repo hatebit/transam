@@ -12,3 +12,8 @@ Drive across the post apocalyptic United States.
 - **D**: Steer right
 - **Space**: Handbrake
 - **R**: Reset car position
+- **Arrow keys**: Camera movement
+
+## Map
+
+![map.png](map.png)
