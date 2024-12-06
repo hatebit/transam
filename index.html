@@ -25,6 +25,13 @@
             background-color: black;
             border: 2px solid red;
         }
+        
+        #message {
+            top: 15px;
+            left: 10px;
+            width: 300px;
+            height: 20px;
+        }
 
         #fps {
             top: 15px;
@@ -49,7 +56,7 @@
 
         #speed {
             bottom: 25px;
-            right: 25px;
+            right: 30px;
             font-family: "Road Rage", sans-serif;
             text-align: right;
             font-size: 45px;
@@ -65,27 +72,33 @@
             font-family: "Road Rage", sans-serif;
             font-size: 70px;
             color: blue;
-            text-shadow: 0 0 10px cyan, 3px 3px 50px white;
+            text-shadow: 0 0 10px cyan, 0 0 50px white;
         }
 
         #map {
             bottom: 15px;
-            left: 10px;
-            width: 321px;
-            height: 176px;
+            left: 15px;
+            width: 175px;
+            height: 175px;
+            border-radius: 50%;
+            overflow: hidden;
+            border-color: blue;
+            box-shadow: 0 0 10px cyan, 3px 3px 50px white;
         }
 
         #mapMarker {
             position: relative;
+            top: 50%;
+            left: 50%;
             background-color: white;
-            width: 5px;
-            height: 5px;
+            width: 6px;
+            height: 6px;
             border-radius: 50%;
-            z-index: 10;
+            z-index: 1;
         }
 
         img {
             position: absolute;
             top: 0;
             left: 0;
-        }</style><script defer="defer" src="js/babylonBundle.js"></script></head><body><div class="ui-element boxed" id="help"><a href="https://github.com/hatebit/transam/blob/main/README.md">Help</a></div><div class="ui-element boxed" id="fps">0 fps</div><div class="ui-element boxed" id="pos">0,0</div><div class="ui-element" id="speed">0</div><div class="ui-element" id="district">No</div><div class="ui-element boxed" id="map"><div class="ui-element boxed" id="mapMarker"></div><img src="./map.png" height="175" width="320"/></div><canvas id="renderCanvas" touch-action="none"></canvas></body></html>
+        }</style><script defer="defer" src="js/babylonBundle.js"></script></head><body><canvas id="renderCanvas" touch-action="none">test</canvas><div class="ui-element boxed" id="message"></div><div class="ui-element boxed" id="help"><a href="https://github.com/hatebit/transam/blob/main/README.md">Help</a></div><div class="ui-element boxed" id="fps">0 fps</div><div class="ui-element boxed" id="pos">0,0</div><div class="ui-element" id="speed">0</div><div class="ui-element" id="district">No</div><div class="ui-element boxed" id="map"><div class="ui-element boxed" id="mapMarker"></div><img id="mapImg" src="./map.png" height="175" width="320"/></div></body></html>
