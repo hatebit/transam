@@ -14,6 +14,7 @@ An attempt to remake [Tranz Am from the Commodore 64](https://en.wikipedia.org/w
 - **D**: Steer right
 - **Space**: Handbrake
 - **R**: Reset car position
+- **F**: Flip car
 - **Arrow keys**: Camera movement
 
 ## Map
@@ -25,7 +26,7 @@ An attempt to remake [Tranz Am from the Commodore 64](https://en.wikipedia.org/w
 * Typescript - Language
 * Babylon.js - 3D engine
 * Ammo.js - Physics engine
-* Webpack - Module bundler
+* Vite - Build tool and dev server
 
 ## Credits
 

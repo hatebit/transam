@@ -1,0 +1,4 @@
+import{n as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t,t as n}from"./shaderStore-BzYzpi6e.js";import{Td as r,np as i,rp as a,wd as o}from"./scene-Cj1cwVTt.js";import{a as s,c,o as l,s as u}from"./mainUVVaryingDeclaration-CrGLEPdQ.js";var d,f,p,m;e((()=>{t(),i(),u(),o(),s(),d=`volumetricLightingRenderVolumeVertexShader`,f=`#include<__decl__sceneVertex>
+#include<__decl__meshVertex>
+attribute vec3 position;varying vec4 vWorldPos;void main(void) {vec4 worldPos=world*vec4(position,1.0);vWorldPos=worldPos;gl_Position=viewProjection*worldPos;}
+`,n.ShadersStore[d]||(n.ShadersStore[d]=f),p=[a,c,r,l];for(let e of p)n.IncludesShadersStore[e.name]||(n.IncludesShadersStore[e.name]=e.shader);m={name:d,shader:f}}))();export{m as volumetricLightingRenderVolumeVertexShader};

@@ -1,106 +1,93 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Trans America</title><meta name="description" content="Drive across the post apocalyptic United States."><meta name="author" content="Nelson"><link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet"><style>html,
-        body {
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        #renderCanvas {
-            width: 100%;
-            height: 100%;
-            touch-action: none;
-        }
+    <title>Trans America</title>
+    <meta name="description" content="Drive across the post apocalyptic United States.">
+    <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./favicon.png"/>
+  <script type="module" crossorigin src="./assets/index-B0b5zFR3.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-BWaJ3C7D.js">
+  <link rel="modulepreload" crossorigin href="./assets/observable-DQREbL7h.js">
+  <link rel="modulepreload" crossorigin href="./assets/internalTexture-ZtJpPyiF.js">
+  <link rel="modulepreload" crossorigin href="./assets/engineStore-BPiSY0q6.js">
+  <link rel="modulepreload" crossorigin href="./assets/logger-CJB-jBrP.js">
+  <link rel="modulepreload" crossorigin href="./assets/shaderStore-BzYzpi6e.js">
+  <link rel="modulepreload" crossorigin href="./assets/domManagement-DTW1_f7u.js">
+  <link rel="modulepreload" crossorigin href="./assets/devTools-CIfYoJ3X.js">
+  <link rel="modulepreload" crossorigin href="./assets/tools.functions-BHWHHe9V.js">
+  <link rel="modulepreload" crossorigin href="./assets/performanceConfigurator-CMpZWMck.js">
+  <link rel="modulepreload" crossorigin href="./assets/precisionDate-CdREu7Iw.js">
+  <link rel="modulepreload" crossorigin href="./assets/abstractEngine.pure-LcIWinyE.js">
+  <link rel="modulepreload" crossorigin href="./assets/thinEngine.pure-BloaoBAW.js">
+  <link rel="modulepreload" crossorigin href="./assets/abstractEngine-B3Hth7zq.js">
+  <link rel="modulepreload" crossorigin href="./assets/abstractEngine.dom.pure-DrwMoZmI.js">
+  <link rel="modulepreload" crossorigin href="./assets/perfCounter-DSrJHZt-.js">
+  <link rel="modulepreload" crossorigin href="./assets/abstractEngine.renderPass.pure-WQNjwZ9c.js">
+  <link rel="modulepreload" crossorigin href="./assets/engine.pure-CiIAoBE2.js">
+  <link rel="modulepreload" crossorigin href="./assets/engine.alphaToCoverage.pure-BDV5gDL0.js">
+  <link rel="modulepreload" crossorigin href="./assets/bufferUtils-VUXWxefH.js">
+  <link rel="modulepreload" crossorigin href="./assets/buffer.pure-DvPr6827.js">
+  <link rel="modulepreload" crossorigin href="./assets/math.scalar.functions-BVu2UnwO.js">
+  <link rel="modulepreload" crossorigin href="./assets/arrayTools-dPpe11_O.js">
+  <link rel="modulepreload" crossorigin href="./assets/typeStore-CuKF9LNX.js">
+  <link rel="modulepreload" crossorigin href="./assets/math.vector.pure-DYEE9_eJ.js">
+  <link rel="modulepreload" crossorigin href="./assets/math.color.pure-BPNG-Z7m.js">
+  <link rel="modulepreload" crossorigin href="./assets/math.axis-Xn8nOZNA.js">
+  <link rel="modulepreload" crossorigin href="./assets/math.plane-D4yPXmYQ.js">
+  <link rel="modulepreload" crossorigin href="./assets/math.frustum-Do6-W89y.js">
+  <link rel="modulepreload" crossorigin href="./assets/math.path--e1jf17G.js">
+  <link rel="modulepreload" crossorigin href="./assets/math.size-CAnGihIQ.js">
+  <link rel="modulepreload" crossorigin href="./assets/math.viewport-DpMUr2nI.js">
+  <link rel="modulepreload" crossorigin href="./assets/math-D7RBRTzm.js">
+  <link rel="modulepreload" crossorigin href="./assets/sphericalPolynomial.pure-DFhnwNcE.js">
+  <link rel="modulepreload" crossorigin href="./assets/decorators-DHt75FoZ.js">
+  <link rel="modulepreload" crossorigin href="./assets/guid-DNI380Cb.js">
+  <link rel="modulepreload" crossorigin href="./assets/decorators.serialization-DD6YN5k6.js">
+  <link rel="modulepreload" crossorigin href="./assets/webRequest-o2PbQVtW.js">
+  <link rel="modulepreload" crossorigin href="./assets/tools.pure-B0RCrTEY.js">
+  <link rel="modulepreload" crossorigin href="./assets/compatibilityOptions-BbR0Ji5d.js">
+  <link rel="modulepreload" crossorigin href="./assets/texture.pure-Cx7HaKCD.js">
+  <link rel="modulepreload" crossorigin href="./assets/preload-helper-CWxOri3M.js">
+  <link rel="modulepreload" crossorigin href="./assets/uniformBuffer-BZ2oWWqB.js">
+  <link rel="modulepreload" crossorigin href="./assets/smartArray-DECnZmGA.js">
+  <link rel="modulepreload" crossorigin href="./assets/renderingManager-CHmjA3ar.js">
+  <link rel="modulepreload" crossorigin href="./assets/lightConstants-F56hSsyf.js">
+  <link rel="modulepreload" crossorigin href="./assets/renderTargetTexture.pure-C88A9jGM.js">
+  <link rel="modulepreload" crossorigin href="./assets/webgpuPerfCounter-8ihUDn15.js">
+  <link rel="modulepreload" crossorigin href="./assets/buffer-BGocDvbR.js">
+  <link rel="modulepreload" crossorigin href="./assets/webgpuCacheRenderPipeline-GA2xCaqy.js">
+  <link rel="modulepreload" crossorigin href="./assets/drawWrapper-DMYHU-pW.js">
+  <link rel="modulepreload" crossorigin href="./assets/effectRenderer.pure-BzRIIN19.js">
+  <link rel="modulepreload" crossorigin href="./assets/clearQuad.vertex-N63oWWEI.js">
+  <link rel="modulepreload" crossorigin href="./assets/clearQuad.fragment-B0SpTT4f.js">
+  <link rel="modulepreload" crossorigin href="./assets/helperFunctions-iuZowKg7.js">
+  <link rel="modulepreload" crossorigin href="./assets/fresnelFunction-CdqCZ-S7.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-qFnyOK5e.css">
+</head>
 
-        .ui-element {
-            position: absolute;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            text-align: center;
-            font-size: medium;
-            color: white;
-        }
+<body>
+<canvas id="renderCanvas" touch-action="none">test</canvas>
 
-        .boxed {
-            background-color: black;
-            border: 2px solid red;
-        }
-        
-        #message {
-            top: 15px;
-            left: 10px;
-            width: 600px;
-            height: 300px;
-            text-align: left;
-            text-shadow: 1px 1px 0 #000
-        }
+<div class="ui-element" id="message"></div>
 
-        #fps {
-            top: 15px;
-            right: 10px;
-            width: 60px;
-            height: 20px;
-        }
+<div class="ui-element boxed" id="fps">0 fps</div>
+<div class="ui-element boxed" id="pos">0,0</div>
+<div class="ui-element boxed" id="heading">0</div>
+<div class="ui-element boxed" id="help">
+    <a href="https://github.com/hatebit/transam/blob/main/README.md">Help</a>
+</div>
 
-        #pos {
-            top: 45px;
-            right: 10px;
-            width: 60px;
-            height: 20px;
-        }
+<div class="ui-element" id="speed">1e23 km/h</div>
+<div class="ui-element" id="district">Loading</div>
 
-        #help {
-            top: 75px;
-            right: 10px;
-            height: 20px;
-            width: 60px;
-        }
+<div class="ui-element boxed" id="map">
+    <div class="ui-element boxed" id="mapMarker"></div>
+    <img id="mapImg" src="./map.png" height="175" width="320"/>
+</div>
 
-        #speed {
-            bottom: 25px;
-            right: 30px;
-            font-family: "Road Rage", sans-serif;
-            text-align: right;
-            font-size: 45px;
-            color: blue;
-            text-shadow: 0 0 10px cyan, 3px 3px 50px white;
-        }
+</body>
 
-        #district {
-            bottom: 60px;
-            right: 25px;
-            width: 300px;
-            rotate: -15deg;
-            font-family: "Road Rage", sans-serif;
-            font-size: 70px;
-            color: blue;
-            text-shadow: 0 0 10px cyan, 0 0 50px white;
-        }
-
-        #map {
-            bottom: 15px;
-            left: 15px;
-            width: 175px;
-            height: 175px;
-            border-radius: 50%;
-            overflow: hidden;
-            border-color: blue;
-            box-shadow: 0 0 10px cyan, 3px 3px 50px white;
-        }
-
-        #mapMarker {
-            position: relative;
-            top: 50%;
-            left: 50%;
-            background-color: white;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            z-index: 1;
-        }
-
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }</style><script defer="defer" src="js/babylonBundle.js"></script></head><body><canvas id="renderCanvas" touch-action="none">test</canvas><div class="ui-element" id="message"></div><div class="ui-element boxed" id="help"><a href="https://github.com/hatebit/transam/blob/main/README.md">Help</a></div><div class="ui-element boxed" id="fps">0 fps</div><div class="ui-element boxed" id="pos">0,0</div><div class="ui-element" id="speed">0</div><div class="ui-element" id="district">No</div><div class="ui-element boxed" id="map"><div class="ui-element boxed" id="mapMarker"></div><img id="mapImg" src="./map.png" height="175" width="320"/></div></body></html>
+</html>

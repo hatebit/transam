@@ -1,0 +1,1 @@
+import{r as e}from"./rolldown-runtime-BWaJ3C7D.js";import{d as t,l as n}from"./glTFFileLoader-DRkBir-F.js";var r=e({KHR_mesh_quantization:()=>a,RegisterKHR_mesh_quantization:()=>s}),i=`KHR_mesh_quantization`,a=class{constructor(e){this.name=i,this.enabled=e.isExtensionUsed(i)}dispose(){}},o=!1;function s(){o||(o=!0,t(i),n(i,!0,e=>new a(e)))}export{s as n,r as t};
