@@ -8,7 +8,7 @@
     <meta name="description" content="Drive across the post apocalyptic United States.">
     <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./favicon.png"/>
-  <script type="module" crossorigin src="./assets/index-B0b5zFR3.js"></script>
+  <script type="module" crossorigin src="./assets/index-4htYphuR.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-BWaJ3C7D.js">
   <link rel="modulepreload" crossorigin href="./assets/observable-DQREbL7h.js">
   <link rel="modulepreload" crossorigin href="./assets/internalTexture-ZtJpPyiF.js">
@@ -65,11 +65,18 @@
   <link rel="modulepreload" crossorigin href="./assets/clearQuad.fragment-B0SpTT4f.js">
   <link rel="modulepreload" crossorigin href="./assets/helperFunctions-iuZowKg7.js">
   <link rel="modulepreload" crossorigin href="./assets/fresnelFunction-CdqCZ-S7.js">
-  <link rel="stylesheet" crossorigin href="./assets/index-qFnyOK5e.css">
+  <link rel="stylesheet" crossorigin href="./assets/index-1nMI7sug.css">
 </head>
 
 <body>
 <canvas id="renderCanvas" touch-action="none">test</canvas>
+
+<div id="loadingOverlay" class="loading-overlay">
+    <div class="loading-content">
+        <div class="loading-text">Loading Trans America…</div>
+        <div class="loading-bar"><div id="loadingProgress" class="loading-progress"></div></div>
+    </div>
+</div>
 
 <div class="ui-element" id="message"></div>
 
@@ -77,7 +84,7 @@
 <div class="ui-element boxed" id="pos">0,0</div>
 <div class="ui-element boxed" id="heading">0</div>
 <div class="ui-element boxed" id="help">
-    <a href="https://github.com/hatebit/transam/blob/main/README.md">Help</a>
+    <a href="/README.md" target="_blank" rel="noopener">Help</a>
 </div>
 
 <div class="ui-element" id="speed">1e23 km/h</div>
